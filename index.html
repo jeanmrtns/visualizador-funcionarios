@@ -1,45 +1,45 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Desafio 1 - Filtragem de funcionários</title>
-    <link rel="stylesheet" href="./styles/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
     <main>
-        <div class="options">
-            <h1>Opções</h1>
-            <select name="sort-by" id="sort-by">
-                <option value="nameAs">Nome ascendente</option>
-                <option value="nameDes">Nome descendente</option>
-                <option value="salaryAs">Salário ascendente</option>
-                <option value="salaryDes">Salário descendente</option>
-            </select>
+      <div class="options">
+        <h1>Opções</h1>
+        <select name="sort-by" id="sort-by">
+          <option value="nameAs">Nome ascendente</option>
+          <option value="nameDes">Nome descendente</option>
+          <option value="salaryAs">Salário ascendente</option>
+          <option value="salaryDes">Salário descendente</option>
+        </select>
 
-            <fieldset>
-                <legend>Filtrar por função</legend>
-                <div class="checkboxRoles" id="roles"></div>
-            </fieldset>
-        </div>
-        <div id="employees">
-            <h1>Funcionários (23)</h1>
-            <table>
-                <thead>
-                    <tr>
-                        <th>ID</th>
-                        <th>Nome</th>
-                        <th>Função</th>
-                        <th>Salário</th>
-                    </tr>
-                </thead>
-                <tbody id="employees-field"></tbody>
-            </table>
-        </div>
+        <fieldset>
+          <legend>Filtrar por função</legend>
+          <div class="checkboxRoles" id="roles"></div>
+        </fieldset>
+      </div>
+      <div id="employees">
+        <h1>Funcionários (23)</h1>
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Nome</th>
+              <th>Função</th>
+              <th>Salário</th>
+            </tr>
+          </thead>
+          <tbody id="employees-field"></tbody>
+        </table>
+      </div>
     </main>
 
     <script src="./scripts/http.js"></script>
     <script src="./scripts/script.js"></script>
-</body>
+  </body>
 </html>
